@@ -1,0 +1,30 @@
+@use "./variables" as *;
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-text;
+  color: $text-col;
+  line-height: 1.6;
+}
+
+// Headings
+h1 {
+  font-family: $font-secondary;
+  font-weight: bold;
+  font-size: 84px;
+  color: $heading-col;
+  line-height: 89px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  color: $heading2-col;
+}
+
+h2 {
+  font-size: $font-size-heading;
+}

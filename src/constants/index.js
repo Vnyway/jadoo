@@ -19,11 +19,6 @@ export const navLinks = [
     title: "Testimonials",
     ref: "#testimonials",
   },
-  {
-    id: 5,
-    title: "Subscribe",
-    ref: "#subscribe",
-  },
 ];
 
 export const services = [

@@ -1,0 +1,29 @@
+@use "../base/variables" as *;
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__wrapper {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__subscribe {
+    border-radius: 5px;
+    border: 1px solid #212832;
+    padding: 6px 12px;
+  }
+}

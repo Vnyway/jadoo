@@ -1,0 +1,32 @@
+@use "./fonts";
+
+// colors
+
+$primary-col: #fff1da;
+$custom-orange-col: #f1a501;
+$custom-red-col: #df6951;
+$heading-col: #181e4b;
+$heading2-col: #14183e;
+$text-col: #5e6282;
+$links-col: #212832;
+
+//font-sizes
+
+$font-size-heading: 50px;
+$font-size-small-heading: 18px;
+$font-size-text: 16px;
+
+//font-families
+
+$font-primary: "Poppins", "sans-serif";
+$font-secondary: "Volkhov", "sans-serif";
+
+//border-radiuses
+
+$br-sm: 13px;
+$br-md: 24px;
+$br-full: 100%;
+
+//transitions
+
+$main-trans: all ease-out 0.3s;
