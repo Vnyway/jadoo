@@ -10,6 +10,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+  }
+  &__logo {
+    opacity: 0;
+    animation: slideInLeft 0.5s ease-out forwards;
+    animation-delay: 0.3s;
   }
   &__navigation {
     display: flex;
@@ -21,9 +27,20 @@
     align-items: center;
     gap: 20px;
   }
+  &__link-item {
+    opacity: 0;
+    animation: slideInRight 0.5s ease-out forwards;
+    animation-delay: 0s;
+  }
   &__subscribe {
     border-radius: 5px;
     border: 1px solid #212832;
     padding: 6px 12px;
+    opacity: 0;
+    animation: slideInRight 0.5s ease-out forwards;
+    animation-delay: 0s;
+    &:hover {
+      border: 1px solid $custom-red-col;
+    }
   }
 }
