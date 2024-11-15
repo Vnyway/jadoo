@@ -1,2 +1,27 @@
 @use "./base";
 @use "./components";
+
+.page {
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+}
+
+.main__wrapper {
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+
+  border-left: 5px solid green;
+}
