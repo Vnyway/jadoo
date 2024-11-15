@@ -8,7 +8,7 @@
 
 .background-image {
   position: absolute;
-  z-index: -1;
+  z-index: -10;
   width: 100vw;
 }
 
@@ -16,17 +16,17 @@
   padding: 0 60px;
   display: flex;
   flex-direction: column;
-  @include u.mq(md) {
-    margin-left: 200px;
+  @include u.mq(sm) {
+    padding: 0 10px;
   }
-  @include u.mq(lg) {
-    margin-left: 200px;
+  @include u.mq(md) {
+    padding: 0 60px;
   }
   @include u.mq(xl) {
-    margin-left: 200px;
+    padding: 0 120px;
   }
   @include u.mq(2xl) {
-    margin-left: 600px;
+    padding: 0 240px;
   }
 }
 

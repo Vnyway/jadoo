@@ -1,8 +1,13 @@
 @use "./variables" as *;
+@use "../utils" as u;
 
-body {
+p,
+span {
   font-family: $font-primary;
-  font-size: $font-size-text;
+  font-size: 14px;
+  @include u.mq(md) {
+    font-size: $font-size-text;
+  }
   color: $text-col;
 }
 
@@ -10,9 +15,14 @@ body {
 h1 {
   font-family: $font-secondary;
   font-weight: bold;
-  font-size: 84px;
+  font-size: 40px;
+  @include u.mq(lg) {
+    font-size: 60px;
+  }
+  @include u.mq(2xl) {
+    font-size: 84px;
+  }
   color: $heading-col;
-  line-height: 89px;
 }
 
 h2,

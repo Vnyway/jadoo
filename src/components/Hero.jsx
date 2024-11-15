@@ -37,7 +37,21 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero__image">
-        <img src="./images/general/traveler.png" alt="traveler" />
+        <img
+          src="./images/general/traveler.png"
+          alt="traveler"
+          className="hero__image__traveller"
+        />
+        <img
+          src="./images/general/plane.png"
+          alt="plane"
+          className="hero__image__plane1"
+        />
+        <img
+          src="./images/general/plane.png"
+          alt="plane"
+          className="hero__image__plane2"
+        />
       </div>
     </section>
   );

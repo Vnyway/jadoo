@@ -1,12 +1,22 @@
 @use "../base/variables" as *;
+@use "../utils" as u;
 
 .hero {
   display: flex;
   width: 100%;
+  flex-direction: column-reverse;
   align-items: center;
+  @include u.mq(md) {
+    flex-direction: row;
+  }
   justify-content: space-between;
   &__content {
-    flex: 2;
+    @include u.mq(md) {
+      flex: 3;
+    }
+    @include u.mq(xl) {
+      flex: 2;
+    }
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -14,7 +24,10 @@
     h4 {
       color: $custom-red-col;
       text-transform: uppercase;
-      font-size: 20px;
+      font-size: 16px;
+      @include u.mq(lg) {
+        font-size: 20px;
+      }
       font-weight: bold;
     }
     &__buttons {
@@ -27,7 +40,10 @@
       color: white;
       background-color: $custom-orange-col;
       border-radius: 10px;
-      font-size: $font-size-small-heading;
+      font-size: 15px;
+      @include u.mq(lg) {
+        font-size: $font-size-small-heading;
+      }
       border: 1px solid white;
       transition: $main-trans;
       &:hover {
@@ -41,7 +57,10 @@
       gap: 15px;
       align-items: center;
       justify-content: center;
-      font-size: 17px;
+      font-size: 14px;
+      @include u.mq(lg) {
+        font-size: 17px;
+      }
       color: $text-col;
       transition: $main-trans;
       div {
@@ -68,9 +87,36 @@
     }
   }
   &__image {
-    flex: 3;
+    @include u.mq(md) {
+      flex: 4;
+    }
+    @include u.mq(xl) {
+      flex: 3;
+    }
     display: flex;
     align-items: center;
     justify-content: end;
+    position: relative;
+    &__traveller {
+      margin-right: 60px;
+    }
+    &__plane1 {
+      position: absolute;
+      right: 60%;
+      top: 5%;
+      z-index: -2;
+      opacity: 0;
+      animation: flyShort 0.8s ease-out forwards;
+      animation-delay: 0.6s;
+    }
+    &__plane2 {
+      position: absolute;
+      right: 5%;
+      top: 10%;
+      z-index: 2;
+      opacity: 0;
+      animation: flyLong 0.8s ease-out forwards;
+      animation-delay: 0.9s;
+    }
   }
 }
