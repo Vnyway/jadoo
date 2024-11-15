@@ -1,5 +1,6 @@
 @use "./base";
 @use "./components";
+@use "./utils" as u;
 
 .page {
   position: relative;
@@ -15,6 +16,18 @@
   padding: 0 60px;
   display: flex;
   flex-direction: column;
+  @include u.mq(md) {
+    margin-left: 200px;
+  }
+  @include u.mq(lg) {
+    margin-left: 200px;
+  }
+  @include u.mq(xl) {
+    margin-left: 200px;
+  }
+  @include u.mq(2xl) {
+    margin-left: 600px;
+  }
 }
 
 .arrow-right {
